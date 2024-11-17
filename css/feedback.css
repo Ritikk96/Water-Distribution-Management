@@ -1,0 +1,32 @@
+body {
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .btn:hover {
+    background-color: #3e8e41;
+  }
+  

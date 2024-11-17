@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback Form</title>
+	<link rel="stylesheet" href="css/feedback.css">
+
+</head>
+<body>
+	<h1>Feedback Form</h1>
+	<form action="submit-feedback.php" method="POST">
+		<div class="form-group">
+			<label class="label" for="name">Name:</label>
+			<input class="input" type="text" name="name" id="name" required>
+		</div>
+		<div class="form-group">
+			<label class="label" for="email">Email:</label>
+			<input class="input" type="email" name="email" id="email" required>
+		</div>
+		<div class="form-group">
+            <label class="label" for="feedback">Feedback:</label>
+			<textarea class="input" name="feedback" id="input-field" rows="5" required></textarea>
+		</div>
+        <button class="btn" onclick="displayInput()">Submit Feedback</button>
+        <p id="display"></p>
+         
+        <script>
+            function displayInput() {
+                var input = document.getElementById("input-field").value;
+                document.getElementById("display").innerHTML = input;
+            }
+        </script>
+</body>
+</html>
